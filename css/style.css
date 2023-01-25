@@ -1,0 +1,27 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+}
+
+.fizz {
+    background-color: green;
+}
+
+.buzz {
+    background-color: yellowgreen;
+}
+
+.fizzbuzz {
+    background-color: sienna
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

@@ -17,17 +17,45 @@
 
 // Scrivi un programma che stampi in console i numeri da 1 a 100,
 
+const listEl = document.getElementById("target");
+// console.log(listEl);
 
+
+
+
+
+// INIZIO CICLO PER STAMPARE DA 1 A 100
 for (let i = 1; i <= 100; i++) {
+
+    const listItemEl = document.createElement('li');
+    listEl.append(listItemEl);
+    // console.log(listItemEl);
+    // listItemEl.classList.add('ciao')
+    // listItemEl.classList.add('box');
+
+    // Se divisibile per 3 e anche per 5
     if (i % 3 == 0 && i % 5 == 0) {
+        listItemEl.classList.add('box', 'fizzbuzz');
         console.log('FizzBuzz');
+
+
+
+        // Se è divisibile solo per 3 
     } else if (i % 3 == 0) {
+        listItemEl.classList.add('box', 'buzz');
+
         console.log('Buzz');
 
+        // Se è divisibile solo per 5
     } else if
         (i % 5 == 0) {
+        listItemEl.classList.add('box', 'fizz');
         console.log('Fizz');
+
     } else {
+        // Altrimenti stampa numero
+        listItemEl.classList.add('box');
+
         console.log(i);
     }
 }
