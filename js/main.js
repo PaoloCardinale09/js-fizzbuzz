@@ -20,13 +20,10 @@
 const listEl = document.getElementById("target");
 // console.log(listEl);
 
-
-
-
-
 // INIZIO CICLO PER STAMPARE DA 1 A 100
 for (let i = 1; i <= 100; i++) {
 
+    //AGGIUNGO LI (list item) CON CREATE ELEMENT 
     const listItemEl = document.createElement('li');
     listEl.append(listItemEl);
     // console.log(listItemEl);
@@ -36,13 +33,15 @@ for (let i = 1; i <= 100; i++) {
     // Se divisibile per 3 e anche per 5
     if (i % 3 == 0 && i % 5 == 0) {
         listItemEl.classList.add('box', 'fizzbuzz');
+        listItemEl.innerHTML = 'FizzBuzz';
+
         console.log('FizzBuzz');
-
-
 
         // Se è divisibile solo per 3 
     } else if (i % 3 == 0) {
         listItemEl.classList.add('box', 'buzz');
+        listItemEl.innerHTML = 'Buzz';
+
 
         console.log('Buzz');
 
@@ -50,10 +49,14 @@ for (let i = 1; i <= 100; i++) {
     } else if
         (i % 5 == 0) {
         listItemEl.classList.add('box', 'fizz');
+        listItemEl.innerHTML = 'Fizz';
+
         console.log('Fizz');
 
     } else {
         // Altrimenti stampa numero
+        listItemEl.innerHTML = i;
+
         listItemEl.classList.add('box');
 
         console.log(i);

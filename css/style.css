@@ -1,6 +1,8 @@
 .box {
     height: 100px;
     width: 100px;
+    line-height: 100px;
+    text-align: center;
     background-color: violet;
 }
 
@@ -13,7 +15,19 @@
 }
 
 .fizzbuzz {
-    background-color: sienna
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+body {
+    background-color: aqua;
 }
 
 li {
